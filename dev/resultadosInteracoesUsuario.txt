@@ -1,0 +1,6 @@
+return 0; // Indica que deu algum erro que ja foi emitido anteriormente
+return 1; // Indica que usuario escolheu tabuleiro 1
+return 2; // Indica que usuario escolheu tabuleiro 2
+return 4; // Indica que deve-se mostrar o historico de movimentos
+return 5; // Indica que deve-se listar os tabuleiros disponiveis para jogar
+return 6; // Sugestão escolhida para movimentar

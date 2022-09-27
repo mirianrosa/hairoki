@@ -20,7 +20,7 @@ na diagonal. Seu objetivo é levar a donzela até a porta de saída.
 
 Por exemplo, a configuração 1 do tipo:
 
-![Figura 1: Configuração 1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Figura 1: Configuração 1](/img/config1.png)
 
 Se atribuímos uma letra para cada tipo de peça, poderíamos ter:
 
@@ -43,7 +43,7 @@ diminuir este trabalho seria armazenar cada movimento possível numa árvore (n�
 cada possível configuração do tabuleiro possuir uma identifição única, se você atingir uma
 configuração que já se encontra na árvore, você pode continuar a partir deste ponto.
 
-![Figura 2: Configuração 2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Figura 2: Configuração 2](/img/config2.png)
 
 A figura 2 possui a seguinte representação:
 
@@ -114,7 +114,7 @@ Engarrafamento
 \*eefgdd*  
 \*hhijkl  
 \*hiimkl  
-********  
+\*********  
 
 As opções anteriores deixam de existir e agora o programa, após ler o arquivo, entra no modo
 interativo.  
@@ -147,12 +147,46 @@ No próximo movimento, o usuário deve poder escolher um número entre 1 e n (da
 
 Implemente também o comando **r**, que faz seu programa procurar a saída do quebra-cabeças automaticamente sem intervenção do usuário. Ao final da execução, o programa deve apresentar o caminho de saída desde a configuração inicial até a resolução final do quebra-cabeças.
 
+## Um pouco sobre o jogo de tabuleiro
+
+[Klotski](https://pt.wikipedia.org/wiki/Klotski) (do polonês *klocki*–blocos de madeira) é um quebra-cabeça de blocos deslizantes que se acredita ter se originado no início do século XX. O nome pode se referir a um layout específico de dez blocos, ou em um sentido mais global, para se referir a todo um grupo de quebra-cabeças de blocos deslizantes semelhantes, onde o objetivo é mover um bloco específico para algum local predefinido.
+
+Como outros quebra-cabeças de blocos deslizantes, várias peças de blocos de tamanhos diferentes são colocadas dentro de uma caixa. Entre os blocos, existe um especial (geralmente o maior) que deve ser movido para uma área designada pelo tabuleiro de jogo. O jogador não tem permissão para remover blocos e só pode deslizar blocos horizontalmente e verticalmente. Objetivos comuns são resolver o quebra-cabeça com um número mínimo de movimentos ou em um período mínimo de tempo.
+
+O número mínimo de jogadas para o quebra-cabeça Klotski original, ilustrado na figura abaixo, é 81, que é verificado pelo computador como o mínimo absoluto para o layout inicial padrão, se você considerar deslizar uma única peça para qualquer posição acessível como uma única jogada.
+
+![Figura 3: Em um quebra-cabeça de Klotski, o maior bloco deve ser movido para o local central do meio, para que possa deslizar sobre a borda, sem que nenhum dos outros blocos seja removido dessa maneira](/img/klotski.png)
+
+Existem várias variações deste jogo, algumas com nomes específicos para a cultura de certos países, outras com diferentes arranjos de blocos. As seguintes variações têm basicamente o mesmo layout e disposição dos blocos, variando apenas em nome (humano, animal ou outros), geralmente com algum tipo de história por trás dos nomes.
+
+####Huarong Dao
+
+O jogo de madeira Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski
+Huarong Dao (também chamado Caminho Huarong ou Trilha Huarong) é a variação chinesa, baseada em uma história fictícia no romance histórico Romance dos Três Reinos sobre o senhor da guerra Cao Cao recuando pela Trilha Huarong (atualmente Jianli County, Jingzhou, Hubei) após sua derrota na Batalha dos Penhascos Vermelhos no inverno de 208/209 dC durante o final da Dinastia Han Oriental. Ele encontrou um general inimigo, Guan Yu, que estava guardando o caminho e esperando por ele. Guan Yu poupou Cao Cao e permitiu que o último passasse pela Trilha Huarong por conta do generoso tratamento que recebeu de Cao no passado. O maior bloco do jogo é chamado "Cao Cao".
+![Figura 4: O jogo de madeira chinês Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski](/img/klotskihuarong.png)
+
+####Filha na caixa
+
+O quebra-cabeça de madeira A Filha na Caixa (nome japonês: hakoiri musume 箱入り娘 ) mostra uma "jovem inocente que não conhece nada do mundo" presa em um prédio. A peça maior é chamada de "filha" e outros blocos recebem nomes de outros membros da família (como pai, mãe e assim por diante).
+Outra variação japonesa usa os nomes de peças de shogi.
+
+![Figura 5: Uma Filha na Caixa（箱入り娘）](/img/klotskidonzela.png)
+
+####L'âne rouge
+Na França, é conhecido como L'âne rouge. Apresenta um burro vermelho (a maior peça) tentando escapar de um labirinto de cercas e canetas para chegar às cenouras.
+
+####Khun Chang Khun Phaen
+Esta é uma variação da Tailândia. Khun Phaen é um personagem famoso da lenda tailandesa, e o jogo recebeu o nome do épico poema Khun Chang Khun Phaen, no qual o personagem está preso. O jogo mostra Khun Phaen saindo da prisão superando suas nove sentinelas.
+
+Há uma pequena diferença entre Khun Chang Khun Phaen e o layout padrão - os dois blocos 1 × 1 do meio são movidos para o fundo. Fora isso, todos os outros blocos são iguais. A origem dessa variação é desconhecida.
+
+
 ## Instalação
 
 Para testar a solução deste repositório, rode:
 
 ```bash
-  gcc hairoki.c -o hairoki
+  gcc hairoki.c -o hairoki && ./haikori
 ```
 
 ## Feedback

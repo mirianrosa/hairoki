@@ -1,0 +1,35 @@
+TIPOS DE PECAS - D, B, P, Q, S, C
+
+D - Tipo donzela
+* * * *
+* D D *
+* D D *
+* * * *
+
+B - Tipo barraca
+* * * *
+* a a *
+* a   *
+* * * *
+
+P - Tipo poste
+* * *
+* i *
+* i *
+* * *
+
+Q - Tipo quadrado
+* * *
+* m *
+* * *
+
+S - Tipo saco de dormir
+* * * *
+* e e *
+* * * *
+
+C - Tipo cadeira
+* * * *
+*   d *
+* d d  *
+* * * *
