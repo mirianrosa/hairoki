@@ -163,11 +163,12 @@ Existem várias variações deste jogo, algumas com nomes específicos para a cu
 
 O jogo de madeira Huarong Dao, que data da década de 1930, segue o mesmo padrão de Klotski
 Huarong Dao (também chamado Caminho Huarong ou Trilha Huarong) é a variação chinesa, baseada em uma história fictícia no romance histórico Romance dos Três Reinos sobre o senhor da guerra Cao Cao recuando pela Trilha Huarong (atualmente Jianli County, Jingzhou, Hubei) após sua derrota na Batalha dos Penhascos Vermelhos no inverno de 208/209 dC durante o final da Dinastia Han Oriental. Ele encontrou um general inimigo, Guan Yu, que estava guardando o caminho e esperando por ele. Guan Yu poupou Cao Cao e permitiu que o último passasse pela Trilha Huarong por conta do generoso tratamento que recebeu de Cao no passado. O maior bloco do jogo é chamado "Cao Cao".
+
 ![Figura 4: O jogo de madeira chinês Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski](/img/klotskihuarong.jpeg)
 
 #### Filha na caixa
 
-O quebra-cabeça de madeira A Filha na Caixa (nome japonês: hakoiri musume 箱入り娘) mostra uma "jovem inocente que não conhece nada do mundo" presa em um prédio. A peça maior é chamada de "filha" e outros blocos recebem nomes de outros membros da família (como pai, mãe e assim por diante).
+O quebra-cabeça de madeira A Filha na Caixa (nome japonês: hakoiri musume 箱入り娘) mostra uma jovem inocente que não conhece nada do mundo presa em um prédio. A peça maior é chamada de "filha" e outros blocos recebem nomes de outros membros da família (como pai, mãe e assim por diante).
 Outra variação japonesa usa os nomes de peças de shogi.
 
 ![Figura 5: Uma Filha na Caixa（箱入り娘）](/img/klotskidonzela.jpeg)
@@ -178,7 +179,7 @@ Na França, é conhecido como L'âne rouge. Apresenta um burro vermelho (a maior
 #### Khun Chang Khun Phaen
 Esta é uma variação da Tailândia. Khun Phaen é um personagem famoso da lenda tailandesa, e o jogo recebeu o nome do épico poema Khun Chang Khun Phaen, no qual o personagem está preso. O jogo mostra Khun Phaen saindo da prisão superando suas nove sentinelas.
 
-Há uma pequena diferença entre Khun Chang Khun Phaen e o layout padrão - os dois blocos 1 × 1 do meio são movidos para o fundo. Fora isso, todos os outros blocos são iguais. A origem dessa variação é desconhecida.
+Há uma pequena diferença entre Khun Chang Khun Phaen e o layout padrão - os dois blocos 1×1 do meio são movidos para o fundo. Fora isso, todos os outros blocos são iguais. A origem dessa variação é desconhecida.
 
 
 ## Instalação
