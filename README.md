@@ -1,5 +1,5 @@
 
-# Haikori Musume
+# Hakoiri Musume
 
 [![Escrito em C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://img.shields.io/badge/)
 
@@ -61,7 +61,7 @@ A figura 2 possui a seguinte representação:
 
 \*&nbsp;&nbsp;\*&nbsp;&nbsp;\*&nbsp;&nbsp;\*&nbsp;&nbsp;\*&nbsp;&nbsp;\*&nbsp;&nbsp;\*&nbsp;&nbsp;\*
 
-### Fase 1
+## Fase 1
 
 Escreva um programa em C que receba argumentos da linha de comando que escolham a
 configuração 1 ou 2 e também direcionem uma das peças para um movimento. A saída de seu
@@ -81,7 +81,7 @@ coordenadas vão de *1,1* até *5,4* e na configuração **2**, de *1,1* até *5
 para **D**ireita ou **E**squerda. Após o comando, deve ser impressa a configuração inicial e a
 configuração após o movimento. Se não for possível movimentar a peça, deve ser emitida mensagem de erro.
 
-### Fase 2
+## Fase 2
 
 Modique seu programa anterior para ele agora ler de um arquivo a conguração da matriz de
 entrada.
@@ -89,13 +89,13 @@ Seu novo programa deve agora ter os parâmetros -f nomeArquivo.txt no qual o arq
 contém uma ou mais congurações de peças, seguindo as regras anteriores. Pesquise no livro
 ou na Internet como abrir e ler um arquivo texto em C. A sintaxe de seu arquivo deve conter
 um nome do problema e logo em seguida a conguração desejada. O nome default do arquivo é
-haikori.txt, que deve ser escolhido se nenhuma opção for apresentada.
+hakoiri.txt, que deve ser escolhido se nenhuma opção for apresentada.
 Assim, se você digitar:
-haikori ele carrega o arquivo haikori.txt.
+hakoiri ele carrega o arquivo hakoiri.txt.
 Porém, se for digitado:
-haikori -f meuarquivo.txt,
+hakoiri -f meuarquivo.txt,
 deve ser carregado o arquivo meuarquivo.txt.
-O arquivo deve usar a seguinte conguração (nome seguido do problema, com uma linha
+O arquivo deve usar a seguinte configuração (nome seguido do problema, com uma linha
 separando cada uma delas):
 
 Floco de Neve  
@@ -140,7 +140,7 @@ Se o usuário digitar uma opção inválida, o programa deve emitir mensagem de 
 sentar as opções válidas. Note o espaçamento entre as letras. Seu programa deve identicar comandos ou movimentos inválidos
 
 
-### Fase Final
+## Fase Final
 
 Coloque a configuração inicial numa árvore (não binária) e acrescente o comando **s** ao seu programa. Ao receber este comando, seu programa deve criar um nível na árvore com outras configurações resultantes de possíveis movimentos da árvore anterior. Seu programa deve imprimir na tela essas configurações numeradas de 1 a n (o número máximo de possíveis movimentos). 
 No próximo movimento, o usuário deve poder escolher um número entre 1 e n (das configurações apresentadas) e seu programa deve gerar novas configurações a partir da configuração escolhida, de novo apresentando as possíveis configurações numeradas, repetindo o processo de escolha de número e geração de novas configurações a partir da configuração escolhida. A cada nova configuração gerada seu programa deve testar se atingiu uma posição de saída do labirinto, finalizando o jogo.
@@ -155,27 +155,27 @@ Como outros quebra-cabeças de blocos deslizantes, várias peças de blocos de t
 
 O número mínimo de jogadas para o quebra-cabeça Klotski original, ilustrado na figura abaixo, é 81, que é verificado pelo computador como o mínimo absoluto para o layout inicial padrão, se você considerar deslizar uma única peça para qualquer posição acessível como uma única jogada.
 
-![Figura 3: Em um quebra-cabeça de Klotski, o maior bloco deve ser movido para o local central do meio, para que possa deslizar sobre a borda, sem que nenhum dos outros blocos seja removido dessa maneira](/img/klotski.png)
+![Figura 3: Em um quebra-cabeça de Klotski, o maior bloco deve ser movido para o local central do meio, para que possa deslizar sobre a borda, sem que nenhum dos outros blocos seja removido dessa maneira](/img/klotski.jpeg)
 
 Existem várias variações deste jogo, algumas com nomes específicos para a cultura de certos países, outras com diferentes arranjos de blocos. As seguintes variações têm basicamente o mesmo layout e disposição dos blocos, variando apenas em nome (humano, animal ou outros), geralmente com algum tipo de história por trás dos nomes.
 
-####Huarong Dao
+#### Huarong Dao
 
-O jogo de madeira Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski
+O jogo de madeira Huarong Dao, que data da década de 1930, segue o mesmo padrão de Klotski
 Huarong Dao (também chamado Caminho Huarong ou Trilha Huarong) é a variação chinesa, baseada em uma história fictícia no romance histórico Romance dos Três Reinos sobre o senhor da guerra Cao Cao recuando pela Trilha Huarong (atualmente Jianli County, Jingzhou, Hubei) após sua derrota na Batalha dos Penhascos Vermelhos no inverno de 208/209 dC durante o final da Dinastia Han Oriental. Ele encontrou um general inimigo, Guan Yu, que estava guardando o caminho e esperando por ele. Guan Yu poupou Cao Cao e permitiu que o último passasse pela Trilha Huarong por conta do generoso tratamento que recebeu de Cao no passado. O maior bloco do jogo é chamado "Cao Cao".
-![Figura 4: O jogo de madeira chinês Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski](/img/klotskihuarong.png)
+![Figura 4: O jogo de madeira chinês Huarong Dao (華容道), que data da década de 1930, segue o mesmo padrão de Klotski](/img/klotskihuarong.jpeg)
 
-####Filha na caixa
+#### Filha na caixa
 
-O quebra-cabeça de madeira A Filha na Caixa (nome japonês: hakoiri musume 箱入り娘 ) mostra uma "jovem inocente que não conhece nada do mundo" presa em um prédio. A peça maior é chamada de "filha" e outros blocos recebem nomes de outros membros da família (como pai, mãe e assim por diante).
+O quebra-cabeça de madeira A Filha na Caixa (nome japonês: hakoiri musume 箱入り娘) mostra uma "jovem inocente que não conhece nada do mundo" presa em um prédio. A peça maior é chamada de "filha" e outros blocos recebem nomes de outros membros da família (como pai, mãe e assim por diante).
 Outra variação japonesa usa os nomes de peças de shogi.
 
-![Figura 5: Uma Filha na Caixa（箱入り娘）](/img/klotskidonzela.png)
+![Figura 5: Uma Filha na Caixa（箱入り娘）](/img/klotskidonzela.jpeg)
 
-####L'âne rouge
+#### L'âne rouge
 Na França, é conhecido como L'âne rouge. Apresenta um burro vermelho (a maior peça) tentando escapar de um labirinto de cercas e canetas para chegar às cenouras.
 
-####Khun Chang Khun Phaen
+#### Khun Chang Khun Phaen
 Esta é uma variação da Tailândia. Khun Phaen é um personagem famoso da lenda tailandesa, e o jogo recebeu o nome do épico poema Khun Chang Khun Phaen, no qual o personagem está preso. O jogo mostra Khun Phaen saindo da prisão superando suas nove sentinelas.
 
 Há uma pequena diferença entre Khun Chang Khun Phaen e o layout padrão - os dois blocos 1 × 1 do meio são movidos para o fundo. Fora isso, todos os outros blocos são iguais. A origem dessa variação é desconhecida.
@@ -186,7 +186,7 @@ Há uma pequena diferença entre Khun Chang Khun Phaen e o layout padrão - os d
 Para testar a solução deste repositório, rode:
 
 ```bash
-  gcc hairoki.c -o hairoki && ./haikori
+  gcc hakoiri.c -o hakoiri && ./hakoiri
 ```
 
 ## Feedback

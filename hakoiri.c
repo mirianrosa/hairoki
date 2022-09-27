@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 #define TAM_MAX_LIN 5
 #define TAM_MAX_COL 7
@@ -89,7 +88,7 @@ int main(int argc, char *argv[])
 
     if (argc == 1)
     {
-        char *nomeArquivoTxt = "haikori.txt";
+        char *nomeArquivoTxt = "hakoiri.txt";
         abreArquivo(nomeArquivoTxt, tabuleiro1, tabuleiro2, titulo1Nome, titulo2Nome);
     }
     else if (argc == 3)
@@ -112,6 +111,8 @@ int main(int argc, char *argv[])
         help1();
         return 1;
     }
+
+    printf("\nBem-vindo!\nEscolha uma das opcoes a seguir para jogar:\n");
 
     help2();
 
@@ -164,7 +165,7 @@ int main(int argc, char *argv[])
                 }
             }
         }
-        else if (inputUsuario[0] == 'R')
+        else if (inputUsuario[0] == 'r')
         {
             if (jaEscolheuTabuleiro == 0)
             {
@@ -173,7 +174,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                comandoAtivo = 'R';
+                comandoAtivo = 'r';
                 fim = 1;
             }
         }
@@ -286,7 +287,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    if (comandoAtivo == 'R')
+    if (comandoAtivo == 'r')
     {
         printf("\nVoce ativou a solucao automatica a partir do momento atual.\n");
         printf("Aguarde enquanto a solucao e calculada para voce...\n");
@@ -758,28 +759,22 @@ char checarTipoPeca(char letra, char tabuleiroJogo[TAM_MAX_LIN][TAM_MAX_COL])
 }
 
 void banner(void)
-{
-    printf(" _   _       _ _              _ \n");
-    printf("| | | | __ _(_) | _____  _ __(_)\n");
-    printf("| |_| |/ _` | | |/ / _ \\| '__| |\n");
-    printf("|  _  | (_| | |   < (_) | |  | |\n");
-    printf("|_| |_|\\__,_|_|_|\\_\\___/|_|  |_|\n");
-    printf("Por Larissa, Mirian e Yuri\n");
+{           
+    printf(" _   _       _         _      _    \n");
+    printf("| | | | __ _| | _____ (_)_ __(_)   \n");
+    printf("| |_| |/ _` | |/ / _ \\| | '__| |  \n");
+    printf("|  _  | (_| |   < (_) | | |  | |   \n");
+    printf("|_| |_|\\__,_|_|\\_\\___/|_|_|  |_|\n");
+    printf(" Liberte-se da caixa de ilusoes\n");
 }
 
 void help1(void)
 {
     printf("Modo de uso: ./tabuleiro [opcoes]\n");
 
-    printf("\n========================= NOTAS =========================\n");
-    printf("ULTIMA FASE - Mostrar sugestoes, criar arvore nao binaria\n");
-    printf("e oferecer opcao para programa procurar a saida automatica-\n");
-    printf("mente, sem a intervencao do usuario.\n");
-
     printf("\n======================== OPCOES ========================\n");
-    printf(" -f <nome_arquivo.txt> : Especifica qual arquivo de tabuleiros\n");
-    printf("                         o jogo deve utilizar.\n");
-    printf("                         Default: haikori.txt\n");
+    printf(" -f <nome_arquivo.txt> : Especifica qual arquivo de tabuleiros o jogo deve utilizar.\n");
+    printf("                         Default: hakoiri.txt\n");
 
     printf("\n======================== EXEMPLOS =======================\n");
     printf(" ./tabuleiro\n");
@@ -788,16 +783,19 @@ void help1(void)
 
 void help2(void)
 {
-    printf("======================== OPCOES ========================\n");
+    printf("\n======================== OPCOES ========================\n\n");
+    printf(" t                   : Exibe o tutorial do jogo.\n\n");
+    printf(" h                   : Exibe este menu de opcoes.\n\n");
     printf(" l                   : Lista e exibe todas as opcoes numeradas dos tabuleiros.\n\n");
-    printf(" c <config_tab>      : Especifica qual dos tabuleiros disponiveis (1 ou 2) o jogo deve utilizar.\n");
+    printf(" c <num_tab>         : Especifica qual dos tabuleiros disponiveis (1 ou 2) o jogo deve utilizar.\n");
     printf("                       Se a configuracao for alterada no meio de um jogo, todo o progresso anterior sera perdido.\n\n");
     printf(" m <lin> <col> <dir> : Movimenta a peca que esta na posicao (lin,col) para a direcao dir.\n");
     printf("                       Direcoes: D - Direita | E - Esquerda | B - Baixo | T - Topo\n\n");
     printf(" p                   : Imprime o historico de movimentacoes desde a configuracao inicial.\n\n");
     printf(" s                   : Ativa ou desativa as sugestoes de proximas jogadas para o usuario.\n\n");
-    printf(" R                   : Ativa a procura automatica pela solucao a partir do momento atual e imprime os passos.\n\n");
-    printf("\n========================================================\n");
+    printf(" r                   : Ativa a procura automatica pela solucao a partir do momento atual e imprime os passos.\n\n");
+    printf(" q                   : Sair do jogo.\n\n");
+    printf("========================================================\n");
 }
 
 int verificaFim(int configTabuleiro, char tabuleiro[TAM_MAX_LIN][TAM_MAX_COL])
@@ -833,6 +831,17 @@ int interacoesUsuario(int argc, char argumento[], int configTabuleiro, int jaEsc
         if (argumento[0] == 'l')
         {
             return 5; // Listar os tabuleiros disponiveis
+        }
+        else if (argumento[0] == 't')
+        {
+            printf("\n======================== TUTORIAL ========================\n\n");
+            printf("Existe uma antiga lenda japonesa sobre a Hakoiri Musume, uma pequena donzela\nque nao sabe nada sobre o mundo e que está encarcerada numa caixa de ilusões. Seu caminho \npara a liberdade é impedido por sua mãe, seu pai, irmãos e irmãs. Enquanto ela não sair \ndesta caixa, não conhecerá a luz da verdade.\n\nAjude a pobre Hakoiri Musume a encontrar seu caminho até a luz! Neste mundo cheio de \nsimbolismos da cultura japonesa, cada personagem será representado no computador por \numa figura geométrica que corresponde à inocência da personagem, mais que a forma física. \nAssim, a nossa pobre Hakoiri Musume é representada pela maior figura do tabuleiro (D), \nrepresentando que sua inocência a impede de encontrar o caminho até a saída enquanto sua\nfamília impõe dificuldades neste caminho.\n\nAs regras são simples: você deve levar a donzela até a saída da caixa, deslocando as \noutras figuras para dar passagem.\n\nNeste tabuleiro:\n- Cada peça é representada por uma letra (ex: g g);\n- As casas vazias são representadas por espacos;\n- Uma figura só pode ser movimentada se existirem casas livres suficientes para a \nmovimentação e só pode ser movimentada na horizontal ou na vertical, nunca na diagonal;\n- Seu objetivo é levar a donzela até a porta de saída, representada pela abertura nas \nmargens do tabuleiro;\n- Sempre que desejar ver as opcoes disponiveis digite o comando h.\n\nComece a jogar agora mesmo!\n");
+            return 0;
+        }
+        else if (argumento[0] == 'h')
+        {
+            help2();
+            return 0;
         }
         else if (argumento[0] == 'p')
         {
@@ -1017,11 +1026,13 @@ void abreArquivo(char nomeArquivoTxt[], char tabuleiro1[TAM_MAX_LIN][TAM_MAX_COL
     if ((arqTxtTabuleiros = fopen(nomeArquivoTxt, "r")) == NULL)
     {
         printf("\n[!] Erro na abertura do arquivo de tabuleiros.\n");
+        printf("    Certifique-se que existe no mesmo diretorio deste programa um arquivo denominado \"hakoiri.txt\" ou providencie um novo arquivo por argumentos.\n\n");
+        help1();
         exit(1);
     }
     else
     {
-        printf("\n[+] Arquivo de tabuleiros carregado com sucesso.\n\n");
+        //printf("\n[+] Arquivo de tabuleiros carregado com sucesso.\n\n");
 
         char str1;
         int titulo1 = 0;

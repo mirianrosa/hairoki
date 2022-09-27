@@ -31,5 +31,5 @@ S - Tipo saco de dormir
 C - Tipo cadeira
 * * * *
 *   d *
-* d d  *
+* d d *
 * * * *
